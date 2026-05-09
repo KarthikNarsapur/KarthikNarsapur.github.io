@@ -209,22 +209,81 @@
       border: 1px solid rgba(139,92,246,0.2);
     }
 
-    .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
-    .cert-card {
-      display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px;
-      background: var(--bg2); border: 1px solid var(--border); border-radius: 6px;
-      text-decoration: none; color: inherit; transition: border-color 0.15s, box-shadow 0.15s;
-    }
-    .cert-card:hover { border-color: var(--border2); box-shadow: 0 0 18px var(--glow); }
-    .cert-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
-    .cert-name { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.45; margin-bottom: 5px; }
-    .cert-issuer { font-size: 11px; color: var(--muted); }
-    .cert-badge {
-      display: inline-block; font-size: 10px; letter-spacing: 0.06em;
-      padding: 2px 8px; border-radius: 3px; margin-top: 6px;
-      background: rgba(52,211,153,0.08); color: var(--green);
-      border: 1px solid rgba(52,211,153,0.2);
-    }
+   ```css id="lq8f3n"
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.cert-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  padding: 20px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.cert-card:hover {
+  border-color: var(--border2);
+  box-shadow: 0 0 18px var(--glow);
+}
+
+.cert-icon {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+}
+
+.cert-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 6px;
+
+  word-break: break-word;
+}
+
+.cert-issuer {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.cert-badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+
+  padding: 3px 9px;
+  border-radius: 3px;
+  margin-top: 8px;
+
+  background: rgba(52,211,153,0.08);
+  color: var(--green);
+  border: 1px solid rgba(52,211,153,0.2);
+}
+```
+
 
     .edu-card {
       background: var(--bg2); border: 1px solid var(--border); border-radius: 6px;
