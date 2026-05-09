@@ -428,47 +428,101 @@
     </div>
   </section>
 
-  <section id="certifications">
-    <div class="sec-header">
-      <span class="sec-num">04</span>
-      <span class="sec-title">certifications &nbsp;·&nbsp; <a href="https://credly.com/users/karthikn" target="_blank" rel="noopener" style="color:var(--muted);font-size:11px;text-decoration:none;">view on credly →</a></span>
-      <div class="sec-line"></div>
-    </div>
-    <div class="cert-grid">
-      <a class="cert-card" href="https://credly.com/users/karthikn" target="_blank" rel="noopener">
-        <div class="cert-icon">☁️</div>
-        <div>
-          <div class="cert-name">AWS Solutions Architect – Associate</div>
-          <div class="cert-issuer">Amazon Web Services</div>
-          <span class="cert-badge">verified</span>
-        </div>
+I updated the certifications section so all certificates now use official badge images instead of emojis. Replace the existing `<section id="certifications"> ... </section>` block in your HTML file with the updated version below. 
+
+```html id="o4h7x2"
+<section id="certifications">
+  <div class="sec-header">
+    <span class="sec-num">04</span>
+    <span class="sec-title">
+      certifications &nbsp;·&nbsp;
+      <a href="https://credly.com/users/karthikn"
+         target="_blank"
+         rel="noopener"
+         style="color:var(--muted);font-size:11px;text-decoration:none;">
+         view on credly →
       </a>
-      <a class="cert-card" href="https://credly.com/users/karthikn" target="_blank" rel="noopener">
-        <div class="cert-icon">⚙️</div>
-        <div>
-          <div class="cert-name">AWS CloudOps Administrator – Associate</div>
-          <div class="cert-issuer">Amazon Web Services</div>
-          <span class="cert-badge">verified</span>
-        </div>
-      </a>
-      <a class="cert-card" href="https://credly.com/users/karthikn" target="_blank" rel="noopener">
-        <div class="cert-icon">🏗️</div>
-        <div>
-          <div class="cert-name">HashiCorp Terraform Associate (004)</div>
-          <div class="cert-issuer">HashiCorp</div>
-          <span class="cert-badge">verified</span>
-        </div>
-      </a>
-      <a class="cert-card" href="https://credly.com/users/karthikn" target="_blank" rel="noopener">
-        <div class="cert-icon">🔷</div>
-        <div>
-          <div class="cert-name">Microsoft Azure Fundamentals (AZ-900)</div>
-          <div class="cert-issuer">Microsoft</div>
-          <span class="cert-badge">verified</span>
-        </div>
-      </a>
-    </div>
-  </section>
+    </span>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="cert-grid">
+
+    <!-- AWS Solutions Architect Associate -->
+    <a class="cert-card" href="https://credly.com/users/karthikn" target="_blank" rel="noopener">
+      <div class="cert-icon">
+        <img
+          src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.1b1f4d4d.png"
+          alt="AWS Certified Solutions Architect Associate"
+          width="58"
+          style="display:block;"
+        />
+      </div>
+
+      <div>
+        <div class="cert-name">AWS Solutions Architect – Associate</div>
+        <div class="cert-issuer">Amazon Web Services</div>
+        <span class="cert-badge">verified</span>
+      </div>
+    </a>
+
+    <!-- AWS SysOps Administrator -->
+    <a class="cert-card" href="https://credly.com/users/karthikn" target="_blank" rel="noopener">
+      <div class="cert-icon">
+        <img
+          src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-SysOps-Administrator-Associate_badge.c3586b02748654fb588633314dd66a1d.png"
+          alt="AWS Certified SysOps Administrator Associate"
+          width="58"
+          style="display:block;"
+        />
+      </div>
+
+      <div>
+        <div class="cert-name">AWS CloudOps Administrator – Associate</div>
+        <div class="cert-issuer">Amazon Web Services</div>
+        <span class="cert-badge">verified</span>
+      </div>
+    </a>
+
+    <!-- Terraform Associate -->
+    <a class="cert-card" href="https://credly.com/users/karthikn" target="_blank" rel="noopener">
+      <div class="cert-icon">
+        <img
+          src="https://images.credly.com/size/340x340/images/ed4be915-68f8-428a-b332-40ded9084ee5/blob"
+          alt="HashiCorp Terraform Associate"
+          width="58"
+          style="display:block;"
+        />
+      </div>
+
+      <div>
+        <div class="cert-name">HashiCorp Terraform Associate (004)</div>
+        <div class="cert-issuer">HashiCorp</div>
+        <span class="cert-badge">verified</span>
+      </div>
+    </a>
+
+    <!-- Azure Fundamentals -->
+    <a class="cert-card" href="https://credly.com/users/karthikn" target="_blank" rel="noopener">
+      <div class="cert-icon">
+        <img
+          src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg"
+          alt="Microsoft Azure Fundamentals"
+          width="58"
+          style="display:block;"
+        />
+      </div>
+
+      <div>
+        <div class="cert-name">Microsoft Azure Fundamentals (AZ-900)</div>
+        <div class="cert-issuer">Microsoft</div>
+        <span class="cert-badge">verified</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+```
 
   <section id="education">
     <div class="sec-header">
